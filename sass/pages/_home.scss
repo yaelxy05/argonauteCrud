@@ -1,0 +1,121 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+
+    h2 {
+        margin: 4rem 0;
+        font-family: $font-h2;
+        font-size: 3rem;
+    }
+
+    .new-member-form {
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0;
+
+        label {
+            font-size: 2rem;
+            margin-right: 2rem;
+            color: $color-label;
+        }
+
+        input {
+            border:2px solid $color-input;
+            border-radius: 10px;
+            margin-right: 2.5rem;
+            padding-left: 1rem;
+            font-size: 1.3rem;
+
+            &:focus-visible {
+                outline: none;
+                border:2px solid rgb(90, 243, 44);
+                color: $color-dark;
+                font-size: 1.3rem;
+                font-family: $font-button;
+                padding-left: 1rem;
+            }
+
+            &::placeholder {
+                font-size: 1.3rem;
+                font-family: $font-button;
+                color: $color-dark;
+            }
+        }
+
+        button {
+            font-family: $font-button;
+            background-color: $color-button;
+            color: $color-light;
+            font-size: 1.4rem;
+            border-radius: 10px;
+            border: none;
+            width: 10rem;
+            height: 3rem;
+            cursor: pointer;
+            transition: all ease-in-out 0.6s;
+
+            &:hover {
+                background: $color-light;
+                color: $color-button;
+                transition: all ease-in-out 0.6s;
+                border: solid 3px $color-button;
+            }
+        }
+    }
+    .argonaute_response--box {
+        display: flex;
+        justify-content: center;
+
+        .argonaute_response--valid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25rem;
+            height: 5rem;
+            color: $color-light;
+            font-family: $font-button;
+            font-size: 1.5rem;
+            background-color: $color-valid;
+            transition: all ease-in-out 1s;
+            border: solid 2px $color-valid;
+            border-radius: 15px;
+        }
+
+        .argonaute_response--fail {
+            color: $color-fail;
+            font-weight: bold;
+            transition: all ease-in-out 1s;
+        }
+    }
+    
+
+    .member-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .member-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 25rem;
+            border: 2px solid $color-label;
+            border-radius: 15px;
+            padding: 1rem;
+            margin: 1rem 0;
+
+            .member-icon {
+                margin-right: 1rem;
+                height: 2rem;
+                width: auto;
+            }
+
+            p {
+                font-weight: bold;
+                text-align: left;
+                flex: 1;
+                margin-left: 2rem;
+            }
+        }
+    }
+}

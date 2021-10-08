@@ -1,0 +1,18 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// Import pages
+@import 'pages/header';
+@import 'pages/footer';
+@import 'pages/home';
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+    h1, h2 {
+    text-align: center;
+    }
+}
